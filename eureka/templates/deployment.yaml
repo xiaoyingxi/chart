@@ -1,22 +1,22 @@
 apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
-  name: {{ template "mychart.fullname" . }}
+  name: {{ include "eureka.fullname" . }}
   labels:
-    app: {{ template "mychart.name" . }}
-    chart: {{ template "mychart.chart" . }}
+    app: {{ include "eureka.name" . }}
+    chart: {{ include "eureka.chart" . }}
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: {{ template "mychart.name" . }}
+      app: {{ include "eureka.name" . }}
       release: {{ .Release.Name }}
   template:
     metadata:
       labels:
-        app: {{ template "mychart.name" . }}
+        app: {{ include "eureka.name" . }}
         release: {{ .Release.Name }}
     spec:
       containers:

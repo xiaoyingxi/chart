@@ -1,13 +1,13 @@
 apiVersion: v1
 entries:
-  mychart:
+  eureka:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-09-15T22:46:13.647619459+08:00
+    created: 2018-09-18T00:19:04.6560402+08:00
     description: A Helm chart for Kubernetes
-    digest: 08abeb3542e8a9ab90df776d3a646199da8be0ebfc5198ef032190938d49e30a
-    name: mychart
+    digest: 1a5caffc427fa29d475ce58875f964d98d506ef9b20743ed1f345c3194d16ff4
+    name: eureka
     urls:
-    - https://xiaoyingxi.github.io/chart/mychart-0.1.0.tgz
+    - https://xiaoyingxi.github.io/chart/eureka-0.1.0.tgz
     version: 0.1.0
-generated: 2018-09-15T22:46:13.647183999+08:00
+generated: 2018-09-18T00:19:04.6239857+08:00

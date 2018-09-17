@@ -1,4 +1,4 @@
-# Default values for mychart.
+# Default values for eureka.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
@@ -8,6 +8,9 @@ image:
   repository: nginx
   tag: stable
   pullPolicy: IfNotPresent
+
+nameOverride: ""
+fullnameOverride: ""
 
 service:
   type: ClusterIP

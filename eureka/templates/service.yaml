@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ template "mychart.fullname" . }}
+  name: {{ include "eureka.fullname" . }}
   labels:
-    app: {{ template "mychart.name" . }}
-    chart: {{ template "mychart.chart" . }}
+    app: {{ include "eureka.name" . }}
+    chart: {{ include "eureka.chart" . }}
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
 spec:
@@ -15,5 +15,5 @@ spec:
       protocol: TCP
       name: http
   selector:
-    app: {{ template "mychart.name" . }}
+    app: {{ include "eureka.name" . }}
     release: {{ .Release.Name }}
