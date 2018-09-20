@@ -3,11 +3,11 @@ entries:
   eureka:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-09-18T00:19:04.6560402+08:00
-    description: A Helm chart for Kubernetes
-    digest: 1a5caffc427fa29d475ce58875f964d98d506ef9b20743ed1f345c3194d16ff4
+    created: 2018-09-20T23:26:24.2808975+08:00
+    description: Spring Cloud Netfix Eureka Server Helm chart for Kubernetes
+    digest: 51fab760f671cf1d1273dc695f755ee87298086ed569ad69e4c6ecf80ef944a6
     name: eureka
     urls:
     - https://xiaoyingxi.github.io/chart/eureka-0.1.0.tgz
     version: 0.1.0
-generated: 2018-09-18T00:19:04.6239857+08:00
+generated: 2018-09-20T23:26:24.2667592+08:00

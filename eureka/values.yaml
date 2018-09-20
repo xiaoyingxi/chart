@@ -5,16 +5,18 @@
 replicaCount: 1
 
 image:
-  repository: nginx
-  tag: stable
-  pullPolicy: IfNotPresent
+  repository: registry.example.com/eureka
+  tag: latest
+  pullPolicy: Always
 
 nameOverride: ""
 fullnameOverride: ""
 
 service:
   type: ClusterIP
-  port: 80
+  port: 8761
+  targetPort: 8761
+  managementPort: 8762
 
 ingress:
   enabled: false
